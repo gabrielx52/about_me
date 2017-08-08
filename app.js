@@ -9,15 +9,17 @@ alert(isKetchupACrime);
 console.log(isKetchupACrime);
 
 var whoShotFirstHanOrGreedo = prompt('Amazing prediction number Two(2)!\nUsing my superior RAM strength I have deduced that you know in your heart of hearts that Greedo, absolutley never, EVER, shot first.\n' + yesNo).toLowerCase();
-altert(whoShotFirstHanOrGreedo);
+alert(whoShotFirstHanOrGreedo);
 console.log(whoShotFirstHanOrGreedo);
 
-// var varp3 = prompt(yesNo).toLowerCase();
-//
-// console.log(varp3);
-// var varp4 = prompt(yesNo).toLowerCase();
-//
-// console.log(varp4);
-// var varp5 = prompt(yesNo).toLowerCase();
-//
-// console.log(varp5);
+var lovesCheese = prompt('Possible accurate prediction number Three(3)!!!\nFrom the impressive size of your shoelaces, I have calculated that you really like cheese, like really, really like it. Almost unnaturally. Amirightoramiright?\n' + yesNo).toLowerCase();
+alert(lovesCheese);
+console.log(lovesCheese);
+
+var isARock = prompt('Absurd assumption number Four(4)!\nYou are not a rock!\n' + yesNo).toLowerCase();
+alert(isARock);
+console.log(isARock);
+
+var varp5 = prompt('\n' + yesNo).toLowerCase();
+alert(varp5);
+console.log(varp5);
