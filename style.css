@@ -2,6 +2,19 @@ nav {
   background-color: grey;
 }
 
+nav a:link {
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
 #navLinks {
   margin-left: 5px;
 }
