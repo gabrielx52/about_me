@@ -1,9 +1,18 @@
 nav {
-  background-color: tan;
+  background-color: grey;
+}
+
+#navLinks {
+  margin-left: 5px;
+}
+
+h1 {
+  margin-left: 5px;
 }
 
 #page {
-  background-color: beige;
+  background-color: yellow;
+  height:100%;
 }
 
 #hamPic {
@@ -14,4 +23,5 @@ nav {
 
 .navButton {
   display: inline-block;
+  font-family: monospace;
 }
