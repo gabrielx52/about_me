@@ -1,3 +1,17 @@
+nav {
+  background-color: tan;
+}
+
 #page {
   background-color: beige;
+}
+
+#hamPic {
+  width:15%;
+  height:15%;
+  float: right;
+}
+
+.navButton {
+  display: inline-block;
 }
