@@ -25,6 +25,7 @@ nav a:hover {
 
 .navButton {
   display: inline-block;
+  padding-left: 2px;
 }
 
 h1 {
@@ -32,13 +33,14 @@ h1 {
 }
 
 h2 {
-  margin-left: 2%;
+  margin-left: 10%;
   float: left;
 
 }
 
 #attr {
   float: left;
+  display: inline-block;
 }
 
 #theMur {
