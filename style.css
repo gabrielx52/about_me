@@ -68,11 +68,22 @@ nav a:hover {
   width: 50%;
 }
 
+.lFloat {
+  float: left;
+}
+
 .col-2 {
-  /*width: 50%;*/
+  margin-top: 20px;
+  width: 50%;
   float: left;
 }
 
 .clearFix {
   clear: both;
+}
+
+#uListSect {
+  margin-bottom: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
