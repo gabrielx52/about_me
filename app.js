@@ -2,19 +2,44 @@
 
 var yesNo = '[Please answer Yes/No or Y/N.]';
 
-alert('Welcome to the amazing Guess-O! Using my amazing powers of deduction I will make five(5) highly probable predictions about you and you will tell me if I am correct or not. Lets begin!');
+alert('Welcome, lets see how well you know Gabriel.');
 
-var isKetchupACrime = prompt('Prediction number One(1)!\nI predict that you believe putting ketchup on hotdogs is a crime slightly worse then treason!\n' + yesNo).toLowerCase();
-console.log('Q: Is ketchup a crime? A: ' + isKetchupACrime);
+var ketchupOnHotDog = prompt('Question One(1)\nDoes Gabe put ketchup on his hotdog?\n' + yesNo).toLowerCase();
+console.log('Q: Is ketchup a crime? A: ' + ketchupOnHotDog);
+if (ketchupOnHotDog === 'y' || ketchupOnHotDog === 'yes' || ketchupOnHotDog === 'n' || ketchupOnHotDog === 'no'){
+  alert('Accepted answer.');
+}else{
+  alert('That is not an acceptable answer.');
+}
 
-var didHanShootFirst = prompt('Amazing prediction number Two(2)!\nUsing my superior RAM strength I have deduced that you know in your heart of hearts that Greedo, absolutley never, EVER, shot first.\n' + yesNo).toLowerCase();
-console.log('Q: Did Han shoot first? A: ' + didHanShootFirst);
+var ownFlipFlops = prompt('Question Two(2)\nDoes Gabriel own flip flops?\n' + yesNo).toLowerCase();
+console.log('Q: Did Han shoot first? A: ' + ownFlipFlops);
+if (ownFlipFlops === 'y' || ownFlipFlops === 'yes' || ownFlipFlops === 'n' || ownFlipFlops === 'no'){
+  alert('Accepted answer.');
+}else{
+  alert('That is not an acceptable answer.');
+}
 
-var getsRoniOnThePizz = prompt('Possible accurate prediction number Three(3)!!!\nFrom the impressive size of your shoelaces, I have calculated that you always get pepperoni on your pizza. Amirightoramiright?\n' + yesNo).toLowerCase();
+var getsRoniOnThePizz = prompt('Question Three(3)\nDoes he always order pepperoni on his pizza?\n' + yesNo).toLowerCase();
 console.log('Q: Always order pepperoni on the pizza? A: ' + getsRoniOnThePizz);
+if (getsRoniOnThePizz === 'y' || getsRoniOnThePizz === 'yes' || getsRoniOnThePizz === 'n' || getsRoniOnThePizz === 'no'){
+  alert('Accepted answer.');
+}else{
+  alert('That is not an acceptable answer.');
+}
 
-var isARock = prompt('Absurd assumption number Four(4)!\nYou are a rock! Are you a rock person??\n' + yesNo).toLowerCase();
-console.log('Q: Are you a rock? A: ' + isARock);
+var isAMolePerson = prompt('Question Four(4)\nIs Gabe a moleperson?\n' + yesNo).toLowerCase();
+console.log('Q: Are you a rock? A: ' + isAMolePerson);
+if (isAMolePerson === 'y' || isAMolePerson === 'yes' || isAMolePerson === 'n' || isAMolePerson === 'no'){
+  alert('Accepted answer.');
+}else{
+  alert('That is not an acceptable answer.');
+}
 
-var isRightHanded = prompt('Fifth and final prediction number Five(5)!!\nUsing all of my highly advanced powers of deduction, I have come to the conclusion that you are right handed!\n' + yesNo).toLowerCase();
+var isRightHanded = prompt('Question Five(5)\nIs Gabriel right handed?\n' + yesNo).toLowerCase();
 console.log('Q: Are you right handed? A: ' + isRightHanded);
+if (isRightHanded === 'y' || isRightHanded === 'yes' || isRightHanded === 'n' || isRightHanded === 'no'){
+  alert('Accepted answer.');
+}else{
+  alert('That is not an acceptable answer.');
+}
