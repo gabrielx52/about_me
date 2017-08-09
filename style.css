@@ -8,7 +8,7 @@ header {
 }
 
 h1 {
-  margin: 0;
+  margin-top: 5px;
   padding-left: 1%;
   float:left;
 }
@@ -54,4 +54,25 @@ nav a:visited {
 nav a:hover {
   background-color: white;
   color: black;
+}
+
+#bioBlock {
+  margin: 25px 0;
+}
+
+#theMur {
+  margin: 0 50px;
+}
+
+#bioPara {
+  width: 50%;
+}
+
+.col-2 {
+  /*width: 50%;*/
+  float: left;
+}
+
+.clearFix {
+  clear: both;
 }
