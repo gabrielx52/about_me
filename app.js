@@ -2,7 +2,9 @@
 
 var yesNo = '[Please answer Yes/No or Y/N.]';
 
-alert('Welcome, lets see how well you know Gabriel.');
+var userName = prompt('Please enter your name:');
+
+alert('Welcome, ' + userName + ' lets see how well you know Gabriel.');
 
 var ketchupOnHotDog = prompt('Question One(1)\nDoes Gabe put ketchup on his hotdog?\n' + yesNo);
 console.log('Q: Does Gabe put ketchup on his hotdogs?\nYour answer: ' + ketchupOnHotDog);
