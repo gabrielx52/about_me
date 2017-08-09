@@ -25,12 +25,10 @@ nav {
     margin: 0;
     padding: 0;
     height: 40px;
-    /*margin-right: 3px;*/
 }
 
 .navButton {
   margin-top: 0;
-  /*padding: 2px;*/
   float:right;
   height:40px;
 }
@@ -86,4 +84,20 @@ nav a:hover {
   margin-bottom: 40px;
   margin-left: 20%;
   margin-right: 20%;
+  height: 180px;
+}
+
+#oListSect {
+  width: 33%;
+  margin: auto;
+}
+
+footer {
+  margin-top: 100px;
+  border-top: black solid 1px;
+}
+
+#footText {
+  text-align: right;
+  margin-right: 1%;
 }
