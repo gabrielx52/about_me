@@ -35,7 +35,14 @@ nav a:hover {
 footer {
   position: absolute;
   bottom: 0;
-  right: 1%;
+  left: 0%;
+  right: 0%;
+  border-top: black solid 1px;
+}
+
+#footText {
+  text-align: right;
+  margin-right: 1%;
 }
 
 h1 {
