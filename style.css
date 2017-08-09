@@ -28,19 +28,31 @@ nav a:hover {
   padding-left: 2px;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 1%;
+}
+
 h1 {
   margin-left: 5%;
 }
 
 h2 {
   margin-left: 10%;
+  margin-right: 10%;
   float: left;
 
 }
 
 #attr {
   float: left;
-  display: inline-block;
+  width: 70%;
+}
+
+p {
+  margin-left: 10px;
+  display: block;
 }
 
 #theMur {
