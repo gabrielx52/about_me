@@ -1,7 +1,57 @@
-/*html {
+body {
+  margin: 0 0 0 0;
   font-family: monospace;
 }
 
-body {
-  margin: 0 0 0 0;
-}*/
+header {
+  background-color: grey;
+}
+
+h1 {
+  margin: 0;
+  padding-left: 1%;
+  float:left;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  text-align: right;
+}
+
+#navLinks {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    /*margin-right: 3px;*/
+}
+
+.navButton {
+  margin-top: 0;
+  /*padding: 2px;*/
+  float:right;
+  height:40px;
+}
+
+li a {
+  display: inline-block;
+  padding-top: 26px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+}
+
+nav a:link {
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
