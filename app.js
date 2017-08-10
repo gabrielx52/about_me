@@ -42,18 +42,22 @@ function flipFlopQuestion() {
 
 flipFlopQuestion();
 
-var getsRoniOnThePizz = prompt('Question Three(3)\nDoes he always order pepperoni on his pizza?\n' + yesNo);
-console.log('Q: Does Gabe always order pepperoni on his pizza?\nYour answer: ' + getsRoniOnThePizz);
-if (getsRoniOnThePizz.toLowerCase() === 'y' || getsRoniOnThePizz.toLowerCase() === 'yes') {
-  correctAnswers++;
-  alert('Correctamundo!! Gabriel always gets \'roni on his pizz\'\n' + 'Score: ' + correctAnswers);
+function pizzaToppingQuestion() {
+  var getsRoniOnThePizz = prompt('Question Three(3)\nDoes he always order pepperoni on his pizza?\n' + yesNo);
+  console.log('Q: Does Gabe always order pepperoni on his pizza?\nYour answer: ' + getsRoniOnThePizz);
+  if (getsRoniOnThePizz.toLowerCase() === 'y' || getsRoniOnThePizz.toLowerCase() === 'yes') {
+    correctAnswers++;
+    alert('Correctamundo!! Gabriel always gets \'roni on his pizz\'\n' + 'Score: ' + correctAnswers);
+  }
+  else if (getsRoniOnThePizz.toLowerCase() === 'n' || getsRoniOnThePizz.toLowerCase() === 'no'){
+    alert('You answered: ' + getsRoniOnThePizz + '\nHow could you be soooo wrong...\n' + 'Score: ' + correctAnswers);
+  }
+  else {
+    alert('That is not an acceptable answer.');
+  }
 }
-else if (getsRoniOnThePizz.toLowerCase() === 'n' || getsRoniOnThePizz.toLowerCase() === 'no'){
-  alert('You answered: ' + getsRoniOnThePizz + '\nHow could you be soooo wrong...\n' + 'Score: ' + correctAnswers);
-}
-else {
-  alert('That is not an acceptable answer.');
-}
+
+pizzaToppingQuestion();
 
 var isAMolePerson = prompt('Question Four(4)\nIs Gabe a mole-person?\n' + yesNo);
 console.log('Q: Is Gabe a mole-person?\nYour answer: ' + isAMolePerson);
