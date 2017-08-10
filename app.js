@@ -100,10 +100,3 @@ while(numberOfGuessesAboutBaseballSoFar < 6) {
 }
 
 alert(userName + '!\nYou did okay kid. Your final score was ' + correctAnswers + ' out of seven(7).\nBetter luck next time.');
-
-
-
-
-
-
-// g
