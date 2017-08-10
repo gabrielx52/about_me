@@ -59,18 +59,22 @@ function pizzaToppingQuestion() {
 
 pizzaToppingQuestion();
 
-var isAMolePerson = prompt('Question Four(4)\nIs Gabe a mole-person?\n' + yesNo);
-console.log('Q: Is Gabe a mole-person?\nYour answer: ' + isAMolePerson);
-if (isAMolePerson.toLowerCase() === 'y' || isAMolePerson.toLowerCase() === 'yes') {
-  alert('No, no he\'s not. But that would be real cool\n' + 'Score: ' + correctAnswers + '\nGood looking on that mole-man business');
+function molePeopleQuestion() {
+  var isAMolePerson = prompt('Question Four(4)\nIs Gabe a mole-person?\n' + yesNo);
+  console.log('Q: Is Gabe a mole-person?\nYour answer: ' + isAMolePerson);
+  if (isAMolePerson.toLowerCase() === 'y' || isAMolePerson.toLowerCase() === 'yes') {
+    alert('No, no he\'s not. But that would be real cool\n' + 'Score: ' + correctAnswers + '\nGood looking on that mole-man business');
+  }
+  else if (isAMolePerson.toLowerCase() === 'n' || isAMolePerson.toLowerCase() === 'no'){
+    correctAnswers++;
+    alert('You answered: ' + isAMolePerson + '\nSadly, you are correct. Gabriel does not have the abilty to burrow through the Earth\'s crust, but if he did it would be the best!\nThe power of flight is lame, mole-people will inherit the world!\n' + 'Score: ' + correctAnswers);
+  }
+  else {
+    alert('That is not an acceptable answer.');
+  }
 }
-else if (isAMolePerson.toLowerCase() === 'n' || isAMolePerson.toLowerCase() === 'no'){
-  correctAnswers++;
-  alert('You answered: ' + isAMolePerson + '\nSadly, you are correct. Gabriel does not have the abilty to burrow through the Earth\'s crust, but if he did it would be the best!\nThe power of flight is lame, mole-people will inherit the world!\n' + 'Score: ' + correctAnswers);
-}
-else {
-  alert('That is not an acceptable answer.');
-}
+
+molePeopleQuestion();
 
 var isRightHanded = prompt('Question Five(5)\nIs Gabriel right handed?\n' + yesNo);
 console.log('Q: Is Gabe right handed?\nYour answer: ' + isRightHanded);
