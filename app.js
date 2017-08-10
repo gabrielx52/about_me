@@ -8,18 +8,22 @@ var correctAnswers = 0;
 
 alert('Welcome, ' + userName + ' lets see how well you know Gabriel.');
 
-var ketchupOnHotDog = prompt('Question One(1)\nDoes Gabe put ketchup on his hotdog?\n' + yesNo);
-console.log('Q: Does Gabe put ketchup on his hotdogs?\nYour answer: ' + ketchupOnHotDog);
-if (ketchupOnHotDog.toLowerCase() === 'y' || ketchupOnHotDog.toLowerCase() === 'yes') {
-  alert('Wrong!!, That\'s gross!!\n' + 'Score: ' + correctAnswers);
+function hotDogQuestion () {
+  var ketchupOnHotDog = prompt('Question One(1)\nDoes Gabe put ketchup on his hotdog?\n' + yesNo);
+  console.log('Q: Does Gabe put ketchup on his hotdogs?\nYour answer: ' + ketchupOnHotDog);
+  if (ketchupOnHotDog.toLowerCase() === 'y' || ketchupOnHotDog.toLowerCase() === 'yes') {
+    alert('Wrong!!, That\'s gross!!\n' + 'Score: ' + correctAnswers);
+  }
+  else if (ketchupOnHotDog.toLowerCase() === 'n' || ketchupOnHotDog.toLowerCase() === 'no') {
+    correctAnswers++;
+    alert('You answered: ' + ketchupOnHotDog + '\nCorrect! Not on any dog of mine!!\n' + 'Score: ' + correctAnswers);
+  }
+  else {
+    alert('That is not an acceptable answer.');
+  }
 }
-else if (ketchupOnHotDog.toLowerCase() === 'n' || ketchupOnHotDog.toLowerCase() === 'no') {
-  correctAnswers++;
-  alert('You answered: ' + ketchupOnHotDog + '\nCorrect! Not on any dog of mine!!\n' + 'Score: ' + correctAnswers);
-}
-else {
-  alert('That is not an acceptable answer.');
-}
+
+hotDogQuestion();
 
 var ownFlipFlops = prompt('Question Two(2)\nDoes Gabriel own flip flops?\n' + yesNo);
 console.log('Q: Does Gabe own flip flops?\nYour answer: ' + ownFlipFlops);
