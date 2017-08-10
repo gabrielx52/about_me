@@ -93,34 +93,33 @@ function dominantHandQuestion() {
 
 dominantHandQuestion();
 
-// Random hotdog generator
-var howManyHotDogsDidGabeEatYesterday = parseInt(Math.random().toString()[2]);
-
-// Fixed hotdig generator
-// var howManyHotDogsDidGabeEatYesterday = 2;
-var numberOfGuessesSoFar = 0;
-
-alert('POP-QUIZ HOTSHOT!!!!\nHow many hotdogs did Gabriel eat yesterday??\nYou have 4 chances for glory so don\'t screw it up!');
-while(numberOfGuessesSoFar < 4) {
-  var hotDogGuess = prompt('How many??');
-  if (parseInt(hotDogGuess) === howManyHotDogsDidGabeEatYesterday) {
-    alert('Hot Damn!!! You guessed right!!!');
-    correctAnswers++;
-    break;
-  }
-  else if (parseInt(hotDogGuess) > howManyHotDogsDidGabeEatYesterday && parseInt(hotDogGuess) < 1000000) {
-    numberOfGuessesSoFar++;
-    alert('Woah, too high, too damn high.\nHe couldn\'t handle all those nitrates.');
-  }
-  else if (parseInt(hotDogGuess) < howManyHotDogsDidGabeEatYesterday && parseInt(hotDogGuess) >= 0) {
-    numberOfGuessesSoFar++;
-    alert('Pfft, he ate waaaaay more then that. Guess again buddy.');
-  }
-  else {
-    numberOfGuessesSoFar++;
-    alert('Norp, try again.');
+function howManyHotDogQuestion() {
+  var howManyHotDogsDidGabeEatYesterday = parseInt(Math.random().toString()[2]);
+  var numberOfGuessesSoFar = 0;
+  alert('POP-QUIZ HOTSHOT!!!!\nHow many hotdogs did Gabriel eat yesterday??\nYou have 4 chances for glory so don\'t screw it up!');
+  while(numberOfGuessesSoFar < 4) {
+    var hotDogGuess = prompt('How many??');
+    if (parseInt(hotDogGuess) === howManyHotDogsDidGabeEatYesterday) {
+      alert('Hot Damn!!! You guessed right!!!');
+      correctAnswers++;
+      break;
+    }
+    else if (parseInt(hotDogGuess) > howManyHotDogsDidGabeEatYesterday && parseInt(hotDogGuess) < 1000000) {
+      numberOfGuessesSoFar++;
+      alert('Woah, too high, too damn high.\nHe couldn\'t handle all those nitrates.');
+    }
+    else if (parseInt(hotDogGuess) < howManyHotDogsDidGabeEatYesterday && parseInt(hotDogGuess) >= 0) {
+      numberOfGuessesSoFar++;
+      alert('Pfft, he ate waaaaay more then that. Guess again buddy.');
+    }
+    else {
+      numberOfGuessesSoFar++;
+      alert('Norp, try again.');
+    }
   }
 }
+
+howManyHotDogQuestion();
 
 var listOfGabesFiveMostHatedBaseballTeams = ['yankees', 'dodgers', 'nationals', 'braves', 'phillies'];
 var numberOfGuessesAboutBaseballSoFar = 0;
