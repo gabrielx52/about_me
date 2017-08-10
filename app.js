@@ -90,7 +90,7 @@ while(numberOfGuessesSoFar < 4) {
   }
   else if (parseInt(hotDogGuess) > howManyHotDogsDidGabeEatYesterday && parseInt(hotDogGuess) < 1000000) {
     numberOfGuessesSoFar++;
-    alert('Woah, too high, too damn high.');
+    alert('Woah, too high, too damn high.\nHe couldn\'t handle all those nitrates.');
   }
   else if (parseInt(hotDogGuess) < howManyHotDogsDidGabeEatYesterday && parseInt(hotDogGuess) >= 0) {
     numberOfGuessesSoFar++;
