@@ -23,7 +23,7 @@ function hotDogQuestion () {
   }
 }
 
-hotDogQuestion();
+//hotDogQuestion();
 
 function flipFlopQuestion() {
   var ownFlipFlops = prompt('Question Two(2)\nDoes Gabriel own flip flops?\n' + yesNo);
@@ -40,7 +40,7 @@ function flipFlopQuestion() {
   }
 }
 
-flipFlopQuestion();
+//flipFlopQuestion();
 
 function pizzaToppingQuestion() {
   var getsRoniOnThePizz = prompt('Question Three(3)\nDoes he always order pepperoni on his pizza?\n' + yesNo);
@@ -57,7 +57,7 @@ function pizzaToppingQuestion() {
   }
 }
 
-pizzaToppingQuestion();
+//pizzaToppingQuestion();
 
 function molePeopleQuestion() {
   var isAMolePerson = prompt('Question Four(4)\nIs Gabe a mole-person?\n' + yesNo);
@@ -74,7 +74,7 @@ function molePeopleQuestion() {
   }
 }
 
-molePeopleQuestion();
+//molePeopleQuestion();
 
 function dominantHandQuestion() {
   var isRightHanded = prompt('Question Five(5)\nIs Gabriel right handed?\n' + yesNo);
@@ -91,7 +91,7 @@ function dominantHandQuestion() {
   }
 }
 
-dominantHandQuestion();
+//dominantHandQuestion();
 
 function howManyHotDogQuestion() {
   var howManyHotDogsDidGabeEatYesterday = parseInt(Math.random().toString()[2]);
@@ -119,23 +119,32 @@ function howManyHotDogQuestion() {
   }
 }
 
-howManyHotDogQuestion();
+//howManyHotDogQuestion();
 
-var listOfGabesFiveMostHatedBaseballTeams = ['yankees', 'dodgers', 'nationals', 'braves', 'phillies'];
-var numberOfGuessesAboutBaseballSoFar = 0;
-
-alert('Last question of the day, hopefully it\'s not 11:12 at night and you have a bad case of brain crabs. Get it right and you go home.');
-while(numberOfGuessesAboutBaseballSoFar < 6) {
-  var baseballGuess = prompt('Can you name a ball club that Gabe hates?');
-  if (listOfGabesFiveMostHatedBaseballTeams.includes(baseballGuess.toLowerCase())) {
-    alert('Yeah, the ' + baseballGuess + ' are the worst!!');
-    correctAnswers++;
-    break;
-  }
-  else {
-    numberOfGuessesAboutBaseballSoFar++;
-    alert('Noorp guest agan plz');
+function baseballTeamQuestion(){
+  var listOfGabesFiveMostHatedBaseballTeams = ['yankees', 'dodgers', 'nationals', 'braves', 'phillies'];
+  var numberOfGuessesAboutBaseballSoFar = 0;
+  alert('Last question of the day, hopefully it\'s not 11:12 at night and you have a bad case of brain crabs. Get it right and you go home.');
+  while(numberOfGuessesAboutBaseballSoFar < 6) {
+    var baseballGuess = prompt('Can you name a ball club that Gabe hates?');
+    if (listOfGabesFiveMostHatedBaseballTeams.includes(baseballGuess.toLowerCase())) {
+      alert('Yeah, the ' + baseballGuess + ' are the worst!!');
+      correctAnswers++;
+      break;
+    }
+    else {
+      numberOfGuessesAboutBaseballSoFar++;
+      alert('Noorp guest agan plz');
+    }
   }
 }
+
+hotDogQuestion();
+flipFlopQuestion();
+pizzaToppingQuestion();
+molePeopleQuestion();
+dominantHandQuestion();
+howManyHotDogQuestion();
+baseballTeamQuestion();
 
 alert(userName + '!\nYou did okay kid. Your final score was ' + correctAnswers + ' out of seven(7).\nBetter luck next time.');
