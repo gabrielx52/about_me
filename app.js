@@ -4,20 +4,28 @@ var yesNo = '[Please answer Yes/No or Y/N.]';
 
 var userName = prompt('Please enter your name:');
 
+var correctAnswers = 0;
+
 alert('Welcome, ' + userName + ' lets see how well you know Gabriel.');
 
 var ketchupOnHotDog = prompt('Question One(1)\nDoes Gabe put ketchup on his hotdog?\n' + yesNo);
 console.log('Q: Does Gabe put ketchup on his hotdogs?\nYour answer: ' + ketchupOnHotDog);
-if (ketchupOnHotDog.toLowerCase() === 'y' || ketchupOnHotDog.toLowerCase() === 'yes' || ketchupOnHotDog.toLowerCase() === 'n' || ketchupOnHotDog.toLowerCase() === 'no'){
-  alert('You answered: ' + ketchupOnHotDog + '\nThe correct answer is: No, he would never do that.');
+if (ketchupOnHotDog.toLowerCase() === 'y' || ketchupOnHotDog.toLowerCase() === 'yes') {
+  alert('Wrong!!, That\'s gross!!\n' + 'Score: ' + correctAnswers);
+} else if (ketchupOnHotDog.toLowerCase() === 'n' || ketchupOnHotDog.toLowerCase() === 'no') {
+  correctAnswers++;
+  alert('You answered: ' + ketchupOnHotDog + '\nCorrect! Not on any dog of mine!!\n' + 'Score: ' + correctAnswers);
 } else {
   alert('That is not an acceptable answer.');
 }
 
 var ownFlipFlops = prompt('Question Two(2)\nDoes Gabriel own flip flops?\n' + yesNo);
 console.log('Q: Does Gabe own flip flops?\nYour answer: ' + ownFlipFlops);
-if (ownFlipFlops.toLowerCase() === 'y' || ownFlipFlops.toLowerCase() === 'yes' || ownFlipFlops.toLowerCase() === 'n' || ownFlipFlops.toLowerCase() === 'no'){
-  alert('You answered: ' + ownFlipFlops + '\nThe correct answer is: No, flip flops are the reason people get eaten by bears or get caught in lava flows. Can\'t run in flippys');
+if (ownFlipFlops.toLowerCase() === 'y' || ownFlipFlops.toLowerCase() === 'yes') {
+  alert('Heck no!!, flip flops are the reason people get eaten by bears or get caught in lava flows. Can\'t run in flippys\n' + 'Score: ' + correctAnswers);
+} else if (ownFlipFlops.toLowerCase() === 'n' || ownFlipFlops.toLowerCase() === 'no') {
+  correctAnswers++;
+  alert('You answered: ' + ownFlipFlops + '\nYou are CORRECT!\nTrench foot, no thanks\n' + 'Score: ' + correctAnswers);
 } else {
   alert('That is not an acceptable answer.');
 }
@@ -45,3 +53,21 @@ if (isRightHanded.toLowerCase() === 'y' || isRightHanded.toLowerCase() === 'yes'
 } else {
   alert('That is not an acceptable answer.');
 }
+
+
+// var gNum = 0;
+//
+// var guess;
+//
+// var num = 1;
+//
+// while(gNum < 4) {
+//   guess = prompt('Make a guess');
+//   if(parseInt(guess) === num) {
+//     alert('good job');
+//     break;
+//   } else {
+//     alert('nope');
+//     gNum++;
+//   }
+// }
