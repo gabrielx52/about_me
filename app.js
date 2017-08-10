@@ -76,18 +76,22 @@ function molePeopleQuestion() {
 
 molePeopleQuestion();
 
-var isRightHanded = prompt('Question Five(5)\nIs Gabriel right handed?\n' + yesNo);
-console.log('Q: Is Gabe right handed?\nYour answer: ' + isRightHanded);
-if (isRightHanded.toLowerCase() === 'y' || isRightHanded.toLowerCase() === 'yes') {
-  correctAnswers++;
-  alert('Yeah, you got that. But it was real easy, don\'t be too proud of yourself\n' + 'Score: ' + correctAnswers);
+function dominantHandQuestion() {
+  var isRightHanded = prompt('Question Five(5)\nIs Gabriel right handed?\n' + yesNo);
+  console.log('Q: Is Gabe right handed?\nYour answer: ' + isRightHanded);
+  if (isRightHanded.toLowerCase() === 'y' || isRightHanded.toLowerCase() === 'yes') {
+    correctAnswers++;
+    alert('Yeah, you got that. But it was real easy, don\'t be too proud of yourself\n' + 'Score: ' + correctAnswers);
+  }
+  else if (isRightHanded.toLowerCase() === 'n' || isRightHanded.toLowerCase() === 'no') {
+    alert('You answered: ' + isRightHanded + '\nYou answered: WRONG\n' + 'Score: ' + correctAnswers);
+  }
+  else {
+    alert('That is not an acceptable answer.');
+  }
 }
-else if (isRightHanded.toLowerCase() === 'n' || isRightHanded.toLowerCase() === 'no') {
-  alert('You answered: ' + isRightHanded + '\nYou answered: WRONG\n' + 'Score: ' + correctAnswers);
-}
-else {
-  alert('That is not an acceptable answer.');
-}
+
+dominantHandQuestion();
 
 // Random hotdog generator
 var howManyHotDogsDidGabeEatYesterday = parseInt(Math.random().toString()[2]);
