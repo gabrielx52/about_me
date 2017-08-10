@@ -25,18 +25,22 @@ function hotDogQuestion () {
 
 hotDogQuestion();
 
-var ownFlipFlops = prompt('Question Two(2)\nDoes Gabriel own flip flops?\n' + yesNo);
-console.log('Q: Does Gabe own flip flops?\nYour answer: ' + ownFlipFlops);
-if (ownFlipFlops.toLowerCase() === 'y' || ownFlipFlops.toLowerCase() === 'yes') {
-  alert('Heck no!!, flip flops are the reason people get eaten by bears or get caught in lava flows. Can\'t run in flippys\n' + 'Score: ' + correctAnswers);
+function flipFlopQuestion() {
+  var ownFlipFlops = prompt('Question Two(2)\nDoes Gabriel own flip flops?\n' + yesNo);
+  console.log('Q: Does Gabe own flip flops?\nYour answer: ' + ownFlipFlops);
+  if (ownFlipFlops.toLowerCase() === 'y' || ownFlipFlops.toLowerCase() === 'yes') {
+    alert('Heck no!!, flip flops are the reason people get eaten by bears or get caught in lava flows. Can\'t run in flippys\n' + 'Score: ' + correctAnswers);
+  }
+  else if (ownFlipFlops.toLowerCase() === 'n' || ownFlipFlops.toLowerCase() === 'no') {
+    correctAnswers++;
+    alert('You answered: ' + ownFlipFlops + '\nYou are CORRECT!\nTrench foot, no thanks\n' + 'Score: ' + correctAnswers);
+  }
+  else {
+    alert('That is not an acceptable answer.');
+  }
 }
-else if (ownFlipFlops.toLowerCase() === 'n' || ownFlipFlops.toLowerCase() === 'no') {
-  correctAnswers++;
-  alert('You answered: ' + ownFlipFlops + '\nYou are CORRECT!\nTrench foot, no thanks\n' + 'Score: ' + correctAnswers);
-}
-else {
-  alert('That is not an acceptable answer.');
-}
+
+flipFlopQuestion();
 
 var getsRoniOnThePizz = prompt('Question Three(3)\nDoes he always order pepperoni on his pizza?\n' + yesNo);
 console.log('Q: Does Gabe always order pepperoni on his pizza?\nYour answer: ' + getsRoniOnThePizz);
