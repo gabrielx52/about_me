@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <title>About Me</title>
   </head>
+
   <body>
     <div id="page">
+
       <header>
         <h1>Lets get to know me.</h1>
         <nav>
@@ -19,23 +22,63 @@
           </ul>
         </nav>
       </header>
-      <div id="content">
-        <img id="theMur" src="http://fillmurray.com/200/300"/>
-        <article id="attr">
-          <h2>Gabriel Jude Meringolo</h2>
-          <ul>
-            <li>Mets fan</li>
-            <li>Sandwich enthusiast</li>
-            <li>Rabbit trainer</li>
-          </ul>
-          <p>I was born on a mountain in New York. I have gone to multiple schools but have no degrees, just a shoebox full of certificates. I have spent most of my professional career grinding away in basement kitchens scattered around the country. I have two cats and one rabbit. The rabbit's name is Pigwidgeon, we call her pig. One day I will move to Flushing Queens and get season tickets for the NY Mets.</p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
+      <div id="content">
+        <section id="bioBlock">
+          <img class="lFloat" id="theMur" src="http://fillmurray.com/200/300"/>
+          <article class="lFloat" id="bioPara">
+            <h2>Gabriel Jude Meringolo</h2>
+            <p>I was born on a mountain in New York. I have gone to multiple schools but have no degrees, just a shoebox full of certificates. I have spent most of my professional career grinding away in basement kitchens scattered around the country. I have two cats and one rabbit. The rabbit's name is Pigwidgeon, we call her pig. One day I will move to Flushing Queens and get season tickets for the NY Mets.</p>
+          </article>
+        </section>
+
+        <div class="clearFix">
+        </div>
+
+        <section id="uListSect">
+          <div class="clearFix"></div>
+          <div class="col-2" id="jobs">
+            <h3>Work Experience</h3>
+            <ul class="list" id="jobList">
+              <li>Chef de Cusine</li>
+              <li>Diesel Mechanic</li>
+              <li>Saucier</li>
+            </ul>
+          </div>
+          <div class="col-2" id="schools">
+            <h3>Education</h3>
+            <ul class="list" id="schoolList">
+              <li>Codefellows</li>
+              <li>University of Washington</li>
+              <li>Johnson &amp; Wales</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="oListSect">
+          <div id="sandwiches">
+            <h3>Top 10 Favorite Sandwiches</h3>
+            <ol class="list" id="sammyList">
+              <li>Ham and Gruyere</li>
+              <li>Bacon</li>
+              <li>Meatloaf</li>
+              <li>B.E.C.</li>
+              <li>Peanut Butter &amp; Jelly</li>
+              <li>Fried Chicken Skin</li>
+              <li>Tuna with Potato Chips</li>
+              <li>Meatball</li>
+              <li>Italian Mix</li>
+              <li>French Dip</li>
+            </ol>
+          </div>
+        </section>
+
       </div>
+
       <footer>
         <p id="footText">The bottom<sup>&copy;</sup></p>
       </footer>
+
     </div>
   </body>
   <script type="text/javascript" src="app.js"></script>

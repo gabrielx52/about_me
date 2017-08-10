@@ -1,13 +1,44 @@
-html {
-  font-family: monospace;
-}
-
 body {
   margin: 0 0 0 0;
+  font-family: monospace;
 }
 
 header {
   background-color: grey;
+}
+
+h1 {
+  margin-top: 5px;
+  padding-left: 1%;
+  float:left;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  text-align: right;
+}
+
+#navLinks {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+}
+
+.navButton {
+  margin-top: 0;
+  float:right;
+  height:40px;
+}
+
+li a {
+  display: inline-block;
+  padding-top: 26px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
 }
 
 nav a:link {
@@ -23,63 +54,50 @@ nav a:hover {
   color: black;
 }
 
-#navLinks {
-  margin-top: 0;
-  text-align: right;
-  padding-right: 1%;
+#bioBlock {
+  margin: 25px 0;
 }
 
-.navButton {
-  display: inline-block;
-  padding-left: 2px;
+#theMur {
+  margin: 0 50px;
+}
+
+#bioPara {
+  width: 50%;
+}
+
+.lFloat {
+  float: left;
+}
+
+.col-2 {
+  margin-top: 20px;
+  width: 50%;
+  float: left;
+}
+
+.clearFix {
+  clear: both;
+}
+
+#uListSect {
+  margin-bottom: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 180px;
+}
+
+#oListSect {
+  width: 33%;
+  margin: auto;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0%;
-  right: 0%;
+  margin-top: 100px;
   border-top: black solid 1px;
 }
 
 #footText {
   text-align: right;
   margin-right: 1%;
-}
-
-h1 {
-  margin-left: 5%;
-  margin-top: 0;
-  margin-bottom: 0;
-  display: inline-block;
-}
-
-h2 {
-  margin-left: 3%;
-  margin-right: 10%;
-  /*float: left;*/
-
-}
-
-#attr {
-  float: left;
-  width: 70%;
-}
-
-p {
-  margin-left: 10px;
-  display: block;
-}
-
-#theMur {
-  margin-left: 5%;
-  float: left;
-}
-
-ul {
-  list-style-type: none;
-}
-
-#content {
-  position: fixed;
 }
