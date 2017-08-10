@@ -23,8 +23,6 @@ function hotDogQuestion () {
   }
 }
 
-//hotDogQuestion();
-
 function flipFlopQuestion() {
   var ownFlipFlops = prompt('Question Two(2)\nDoes Gabriel own flip flops?\n' + yesNo);
   console.log('Q: Does Gabe own flip flops?\nYour answer: ' + ownFlipFlops);
@@ -39,8 +37,6 @@ function flipFlopQuestion() {
     alert('That is not an acceptable answer.');
   }
 }
-
-//flipFlopQuestion();
 
 function pizzaToppingQuestion() {
   var getsRoniOnThePizz = prompt('Question Three(3)\nDoes he always order pepperoni on his pizza?\n' + yesNo);
@@ -57,8 +53,6 @@ function pizzaToppingQuestion() {
   }
 }
 
-//pizzaToppingQuestion();
-
 function molePeopleQuestion() {
   var isAMolePerson = prompt('Question Four(4)\nIs Gabe a mole-person?\n' + yesNo);
   console.log('Q: Is Gabe a mole-person?\nYour answer: ' + isAMolePerson);
@@ -74,8 +68,6 @@ function molePeopleQuestion() {
   }
 }
 
-//molePeopleQuestion();
-
 function dominantHandQuestion() {
   var isRightHanded = prompt('Question Five(5)\nIs Gabriel right handed?\n' + yesNo);
   console.log('Q: Is Gabe right handed?\nYour answer: ' + isRightHanded);
@@ -90,8 +82,6 @@ function dominantHandQuestion() {
     alert('That is not an acceptable answer.');
   }
 }
-
-//dominantHandQuestion();
 
 function howManyHotDogQuestion() {
   var howManyHotDogsDidGabeEatYesterday = parseInt(Math.random().toString()[2]);
@@ -118,8 +108,6 @@ function howManyHotDogQuestion() {
     }
   }
 }
-
-//howManyHotDogQuestion();
 
 function baseballTeamQuestion(){
   var listOfGabesFiveMostHatedBaseballTeams = ['yankees', 'dodgers', 'nationals', 'braves', 'phillies'];
