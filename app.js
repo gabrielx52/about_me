@@ -63,6 +63,14 @@ if (isRightHanded.toLowerCase() === 'y' || isRightHanded.toLowerCase() === 'yes'
   alert('That is not an acceptable answer.');
 }
 
+var howManyHotDogsDidGabeEatYesterday = 2;
+var numberOfGuessesSoFar = 0;
+var chancesRemaining = (4 - numberOfGuessesSoFar);
+
+alert('POP-QUIZ HOTSHOT!!!!\nHow many hotdogs is Gabriel eat yesterday??\nYou have ' + chancesRemaining + ' chances for glory so don\'t screw it up!');
+
+alert(userName + '!\nYou did okay kid. Your final score was ' + correctAnswers + ' out of seven(7).\nBetter luck next time.');
+
 // var gNum = 0;
 //
 // var guess;
