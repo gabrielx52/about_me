@@ -63,8 +63,10 @@ if (isRightHanded.toLowerCase() === 'y' || isRightHanded.toLowerCase() === 'yes'
   alert('That is not an acceptable answer.');
 }
 
+// Random hotdog generator
 var howManyHotDogsDidGabeEatYesterday = parseInt(Math.random().toString()[2]);
 
+// Fixed hotdig generator
 // var howManyHotDogsDidGabeEatYesterday = 2;
 var numberOfGuessesSoFar = 0;
 
