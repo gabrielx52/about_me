@@ -67,7 +67,6 @@ var howManyHotDogsDidGabeEatYesterday = 2;
 var numberOfGuessesSoFar = 0;
 
 alert('POP-QUIZ HOTSHOT!!!!\nHow many hotdogs did Gabriel eat yesterday??\nYou have 4 chances for glory so don\'t screw it up!');
-
 while(numberOfGuessesSoFar < 4) {
   var hotDogGuess = prompt('How many??');
   if (parseInt(hotDogGuess) === howManyHotDogsDidGabeEatYesterday) {
@@ -84,4 +83,27 @@ while(numberOfGuessesSoFar < 4) {
   }
 }
 
+var listOfGabesFiveMostHatedBaseballTeams = ['yankees', 'dodgers', 'nationals', 'braves', 'phillies'];
+var numberOfGuessesAboutBaseballSoFar = 0;
+
+alert('Last question of the day, hopefully it\'s not 11:12 at night and you have a bad case of brain crabs. Get it right and you go home.');
+while(numberOfGuessesAboutBaseballSoFar < 6) {
+  var baseballGuess = prompt('Can you name a ball club that Gabe hates?');
+  if (listOfGabesFiveMostHatedBaseballTeams.includes(baseballGuess.toLowerCase())) {
+    alert('Yeah, the ' + baseballGuess + ' are the worst!!');
+    correctAnswers++;
+    break;
+  } else {
+    numberOfGuessesAboutBaseballSoFar++;
+    alert('Noorp guest agan plz');
+  }
+}
+
 alert(userName + '!\nYou did okay kid. Your final score was ' + correctAnswers + ' out of seven(7).\nBetter luck next time.');
+
+
+
+
+
+
+// g
