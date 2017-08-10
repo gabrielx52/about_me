@@ -32,28 +32,36 @@ if (ownFlipFlops.toLowerCase() === 'y' || ownFlipFlops.toLowerCase() === 'yes') 
 
 var getsRoniOnThePizz = prompt('Question Three(3)\nDoes he always order pepperoni on his pizza?\n' + yesNo);
 console.log('Q: Does Gabe always order pepperoni on his pizza?\nYour answer: ' + getsRoniOnThePizz);
-if (getsRoniOnThePizz.toLowerCase() === 'y' || getsRoniOnThePizz.toLowerCase() === 'yes' || getsRoniOnThePizz.toLowerCase() === 'n' || getsRoniOnThePizz.toLowerCase() === 'no'){
-  alert('You answered: ' + getsRoniOnThePizz + '\nThe correct answer is: Yes, aways.');
+if (getsRoniOnThePizz.toLowerCase() === 'y' || getsRoniOnThePizz.toLowerCase() === 'yes') {
+  correctAnswers++;
+  alert('Correctamundo!! Gabriel always gets \'roni on his pizz\'\n' + 'Score: ' + correctAnswers);
+} else if (getsRoniOnThePizz.toLowerCase() === 'n' || getsRoniOnThePizz.toLowerCase() === 'no'){
+  alert('You answered: ' + getsRoniOnThePizz + '\nHow could you be soooo wrong...\n' + 'Score: ' + correctAnswers);
 } else {
   alert('That is not an acceptable answer.');
 }
 
 var isAMolePerson = prompt('Question Four(4)\nIs Gabe a mole-person?\n' + yesNo);
 console.log('Q: Is Gabe a mole-person?\nYour answer: ' + isAMolePerson);
-if (isAMolePerson.toLowerCase() === 'y' || isAMolePerson.toLowerCase() === 'yes' || isAMolePerson.toLowerCase() === 'n' || isAMolePerson.toLowerCase() === 'no'){
-  alert('You answered: ' + isAMolePerson + '\nThe correct answer is: No, but he would choose that over flight or the ability to breath under water.');
+if (isAMolePerson.toLowerCase() === 'y' || isAMolePerson.toLowerCase() === 'yes') {
+  alert('No, no he\'s not. But that would be real cool\n' + 'Score: ' + correctAnswers + '\nGood looking on that mole-man business');
+} else if (isAMolePerson.toLowerCase() === 'n' || isAMolePerson.toLowerCase() === 'no'){
+  correctAnswers++;
+  alert('You answered: ' + isAMolePerson + '\nSadly, you are correct. Gabriel does not posses the abilty to burrow through the Earth\'s crust, but if he did it would be the best!\nThe power of flight is lame, mole-people will inherit the world!\n' + 'Score: ' + correctAnswers);
 } else {
   alert('That is not an acceptable answer.');
 }
 
 var isRightHanded = prompt('Question Five(5)\nIs Gabriel right handed?\n' + yesNo);
 console.log('Q: Is Gabe right handed?\nYour answer: ' + isRightHanded);
-if (isRightHanded.toLowerCase() === 'y' || isRightHanded.toLowerCase() === 'yes' || isRightHanded.toLowerCase() === 'n' || isRightHanded.toLowerCase() === 'no'){
-  alert('You answered: ' + isRightHanded + '\nThe correct answer is: Yes, yes he is.');
+if (isRightHanded.toLowerCase() === 'y' || isRightHanded.toLowerCase() === 'yes') {
+  correctAnswers++;
+  alert('Yeah, you got that. But it was real easy, don\'t be too proud of yourself\n' + 'Score: ' + correctAnswers);
+} else if (isRightHanded.toLowerCase() === 'n' || isRightHanded.toLowerCase() === 'no') {
+  alert('You answered: ' + isRightHanded + '\nYou answered: WRONG\n' + 'Score: ' + correctAnswers);
 } else {
   alert('That is not an acceptable answer.');
 }
-
 
 // var gNum = 0;
 //
