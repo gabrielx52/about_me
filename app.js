@@ -47,7 +47,7 @@ if (isAMolePerson.toLowerCase() === 'y' || isAMolePerson.toLowerCase() === 'yes'
   alert('No, no he\'s not. But that would be real cool\n' + 'Score: ' + correctAnswers + '\nGood looking on that mole-man business');
 } else if (isAMolePerson.toLowerCase() === 'n' || isAMolePerson.toLowerCase() === 'no'){
   correctAnswers++;
-  alert('You answered: ' + isAMolePerson + '\nSadly, you are correct. Gabriel does not posses the abilty to burrow through the Earth\'s crust, but if he did it would be the best!\nThe power of flight is lame, mole-people will inherit the world!\n' + 'Score: ' + correctAnswers);
+  alert('You answered: ' + isAMolePerson + '\nSadly, you are correct. Gabriel does not have the abilty to burrow through the Earth\'s crust, but if he did it would be the best!\nThe power of flight is lame, mole-people will inherit the world!\n' + 'Score: ' + correctAnswers);
 } else {
   alert('That is not an acceptable answer.');
 }
@@ -65,25 +65,23 @@ if (isRightHanded.toLowerCase() === 'y' || isRightHanded.toLowerCase() === 'yes'
 
 var howManyHotDogsDidGabeEatYesterday = 2;
 var numberOfGuessesSoFar = 0;
-var chancesRemaining = (4 - numberOfGuessesSoFar);
 
-alert('POP-QUIZ HOTSHOT!!!!\nHow many hotdogs is Gabriel eat yesterday??\nYou have ' + chancesRemaining + ' chances for glory so don\'t screw it up!');
+alert('POP-QUIZ HOTSHOT!!!!\nHow many hotdogs did Gabriel eat yesterday??\nYou have 4 chances for glory so don\'t screw it up!');
+
+while(numberOfGuessesSoFar < 4) {
+  var hotDogGuess = prompt('How many??');
+  if (parseInt(hotDogGuess) === howManyHotDogsDidGabeEatYesterday) {
+    alert('Hot Damn!!! You guessed right!!!');
+    correctAnswers++;
+    break;
+  } else if (parseInt(hotDogGuess) > howManyHotDogsDidGabeEatYesterday && parseInt(hotDogGuess) < 1000000) {
+    alert('Woah, too high, too damn high.');
+  } else if (parseInt(hotDogGuess) < howManyHotDogsDidGabeEatYesterday && parseInt(hotDogGuess) >= 0) {
+    alert('Pfft, he ate waaaaay more then that. Guess again buddy.');
+  } else {
+    numberOfGuessesSoFar++;
+    alert('Norp, try again.');
+  }
+}
 
 alert(userName + '!\nYou did okay kid. Your final score was ' + correctAnswers + ' out of seven(7).\nBetter luck next time.');
-
-// var gNum = 0;
-//
-// var guess;
-//
-// var num = 1;
-//
-// while(gNum < 4) {
-//   guess = prompt('Make a guess');
-//   if(parseInt(guess) === num) {
-//     alert('good job');
-//     break;
-//   } else {
-//     alert('nope');
-//     gNum++;
-//   }
-// }
