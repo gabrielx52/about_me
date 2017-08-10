@@ -63,7 +63,9 @@ if (isRightHanded.toLowerCase() === 'y' || isRightHanded.toLowerCase() === 'yes'
   alert('That is not an acceptable answer.');
 }
 
-var howManyHotDogsDidGabeEatYesterday = 2;
+var howManyHotDogsDidGabeEatYesterday = parseInt(Math.random().toString()[2]);
+
+// var howManyHotDogsDidGabeEatYesterday = 2;
 var numberOfGuessesSoFar = 0;
 
 alert('POP-QUIZ HOTSHOT!!!!\nHow many hotdogs did Gabriel eat yesterday??\nYou have 4 chances for glory so don\'t screw it up!');
@@ -74,8 +76,10 @@ while(numberOfGuessesSoFar < 4) {
     correctAnswers++;
     break;
   } else if (parseInt(hotDogGuess) > howManyHotDogsDidGabeEatYesterday && parseInt(hotDogGuess) < 1000000) {
+    numberOfGuessesSoFar++;
     alert('Woah, too high, too damn high.');
   } else if (parseInt(hotDogGuess) < howManyHotDogsDidGabeEatYesterday && parseInt(hotDogGuess) >= 0) {
+    numberOfGuessesSoFar++;
     alert('Pfft, he ate waaaaay more then that. Guess again buddy.');
   } else {
     numberOfGuessesSoFar++;
