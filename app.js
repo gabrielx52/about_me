@@ -30,7 +30,7 @@ function flipFlopQuestion() {
   }
   else if (ownFlipFlops.toLowerCase() === 'n' || ownFlipFlops.toLowerCase() === 'no') {
     correctAnswers++;
-    alert('You answered: ' + ownFlipFlops + '\nYou are correct\nGabe owns no flip flops.\n' + 'Score: ' + correctAnswers);
+    alert('You answered: ' + ownFlipFlops + '\nYou are correct, Gabe owns no flip flops.\n' + 'Score: ' + correctAnswers);
   }
   else {
     alert(notAcceptableAnswerScript);
@@ -42,7 +42,7 @@ function pizzaToppingQuestion() {
   console.log('Q: Does Gabe always order pepperoni on his pizza?\nYour answer: ' + getsRoniOnThePizz);
   if (getsRoniOnThePizz.toLowerCase() === 'y' || getsRoniOnThePizz.toLowerCase() === 'yes') {
     correctAnswers++;
-    alert('You are correct, Gabriel always gets \'roni on his pizza\n' + 'Score: ' + correctAnswers);
+    alert('You are correct, Gabriel always gets \'roni on his pizza.\n' + 'Score: ' + correctAnswers);
   }
   else if (getsRoniOnThePizz.toLowerCase() === 'n' || getsRoniOnThePizz.toLowerCase() === 'no'){
     alert('You answered: ' + getsRoniOnThePizz + '\nWrong, pepperoni for life.\n' + 'Score: ' + correctAnswers);
@@ -56,11 +56,11 @@ function molePeopleQuestion() {
   var isAMolePerson = prompt('Question Four(4)\nIs Gabe a mole-person?\n' + yesNo);
   console.log('Q: Is Gabe a mole-person?\nYour answer: ' + isAMolePerson);
   if (isAMolePerson.toLowerCase() === 'y' || isAMolePerson.toLowerCase() === 'yes') {
-    alert('No, no he\'s not. But that would be real cool\n' + 'Score: ' + correctAnswers);
+    alert('No, no he\'s not. But that would be real cool.\n' + 'Score: ' + correctAnswers);
   }
   else if (isAMolePerson.toLowerCase() === 'n' || isAMolePerson.toLowerCase() === 'no'){
     correctAnswers++;
-    alert('You answered: ' + isAMolePerson + '\nSadly, you are correct. Gabriel is not a mole-man\n' + 'Score: ' + correctAnswers);
+    alert('You answered: ' + isAMolePerson + '\nSadly, you are correct. Gabriel is not a mole-man.\n' + 'Score: ' + correctAnswers);
   }
   else {
     alert(notAcceptableAnswerScript);
@@ -120,7 +120,7 @@ function baseballTeamQuestion(){
     }
     else {
       numberOfGuessesAboutBaseballSoFar++;
-      alert(baseballGuess + ' aren\'t that bad, guess again');
+      alert('The ' + baseballGuess.toUpperCase() + ' aren\'t that bad, guess again.');
     }
   }
 }
