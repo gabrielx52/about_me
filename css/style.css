@@ -1,7 +1,12 @@
-header {
+body {
   font-family: 'Noticia Text', serif;
   font-weight: 400;
-  border-bottom: 1px solid black;
+}
+
+header {
+  /*font-family: 'Noticia Text', serif;
+  font-weight: 400;*/
+  border-bottom: 1px solid grey;
 }
 
 
@@ -46,9 +51,24 @@ nav a:hover{
 .navButton {
   padding-top: 2.4em;
   display: inline-block;
-  /*margin: .01em;*/
 }
 
 .clearFix {
   clear: both;
+}
+
+footer {
+  float: right;
+  height: 3em;
+  width: 9em;
+  margin-top: 5em;
+  margin-bottom: 2.1em;
+  border-top: solid 1px grey;
+}
+
+#footText {
+  text-align: right;
+  margin-right: 1.2em;
+  margin-top: 0.8em;
+  /*margin-bottom: 2.1em;*/
 }
