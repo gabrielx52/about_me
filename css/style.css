@@ -60,6 +60,8 @@ nav a:hover {
 
 #theMur {
   margin: 0 50px;
+  height: 14em;
+  border-radius: 100%;
 }
 
 #bioPara {
