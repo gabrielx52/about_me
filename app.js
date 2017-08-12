@@ -1,9 +1,8 @@
 'use strict';
 
 var yesNo = '[Please answer Yes/No or Y/N.]';
-
 var userName = prompt('Please enter your name:');
-
+console.log('User\'s name: ' + userName);
 var correctAnswers = 0;
 
 alert('Welcome, ' + userName + ' lets see how well you know Gabriel.');
@@ -87,8 +86,10 @@ function howManyHotDogQuestion() {
   var howManyHotDogsDidGabeEatYesterday = parseInt(Math.random().toString()[2]);
   var numberOfGuessesSoFar = 0;
   alert('POP-QUIZ HOTSHOT!!!!\nHow many hotdogs did Gabriel eat yesterday??\nYou have 4 chances for glory so don\'t screw it up!');
+  console.log('Q: How many hotdogs did Gabriel eat yesterday?');
   while(numberOfGuessesSoFar < 4) {
     var hotDogGuess = prompt('How many??');
+    console.log('Attempt number: ' + (numberOfGuessesSoFar + 1) + '\nYou answered: ' + hotDogGuess);
     if (parseInt(hotDogGuess) === howManyHotDogsDidGabeEatYesterday) {
       alert('Hot Damn!!! You guessed right!!!');
       correctAnswers++;
@@ -113,16 +114,20 @@ function baseballTeamQuestion(){
   var listOfGabesFiveMostHatedBaseballTeams = ['yankees', 'dodgers', 'nationals', 'braves', 'phillies'];
   var numberOfGuessesAboutBaseballSoFar = 0;
   alert('Last question of the day, hopefully it\'s not 11:12 at night and you have a bad case of brain crabs. Get it right and you go home.');
+  console.log('Q: What are Gabriel\'s least favorite baseball teams?');
   while(numberOfGuessesAboutBaseballSoFar < 6) {
     var baseballGuess = prompt('Can you name a ball club that Gabe hates?');
-    if (listOfGabesFiveMostHatedBaseballTeams.includes(baseballGuess.toLowerCase())) {
+    console.log('Attempt number: ' + (numberOfGuessesAboutBaseballSoFar + 1) + '\nYou answered: ' + baseballGuess);
+    if (listOfGabesFiveMostHatedBaseballTeams.includes(baseballGuess.toLowerCase()) && numberOfGuessesAboutBaseballSoFar < 6) {
       alert('Yeah, the ' + baseballGuess + ' are the worst!!');
       correctAnswers++;
       break;
-    }
-    else {
+    } else if (numberOfGuessesAboutBaseballSoFar < 6) {
       numberOfGuessesAboutBaseballSoFar++;
       alert('Noorp guest agan plz');
+      if (numberOfGuessesAboutBaseballSoFar === 6) {
+        alert('Gabe dislikes these teams the most:\n' + listOfGabesFiveMostHatedBaseballTeams.join(', '));
+      }
     }
   }
 }
