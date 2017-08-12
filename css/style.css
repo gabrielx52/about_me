@@ -1,6 +1,9 @@
 header {
   font-family: 'Noticia Text', serif;
+  font-weight: 400;
+  border-bottom: 1px solid black;
 }
+
 
 h1 {
   margin-left: 2%;
@@ -18,14 +21,32 @@ h1 {
   letter-spacing: -0.15em;
 }
 
-nav a{
+nav {
+  text-align: right;
+  margin-right: 2%;
+}
+
+nav a {
   text-decoration: none;
   color: black;
+}
+
+nav a:link {
+  color: black;
+}
+
+nav a:visited {
+  color: black;
+}
+
+nav a:hover{
+  color: rgb(102, 61, 122);
 }
 
 .navButton {
   padding-top: 2.4em;
   display: inline-block;
+  /*margin: .01em;*/
 }
 
 .clearFix {
