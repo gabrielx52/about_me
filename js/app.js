@@ -2,6 +2,7 @@
 
 var yesNo = '[Please answer Yes/No or Y/N.]';
 var userName = prompt('Please enter your name:');
+console.log('User\'s name: ' + userName);
 var correctAnswers = 0;
 var notAcceptableAnswerScript = 'That is not an acceptable answer.';
 
@@ -86,8 +87,10 @@ function howManyHotDogQuestion() {
   var howManyHotDogsDidGabeEatYesterday = parseInt(Math.random().toString()[2]);
   var numberOfGuessesSoFar = 0;
   alert('POP-QUIZ!!!!\nHow many hotdogs did Gabriel eat yesterday??');
+  console.log('Q: How many hotdogs did Gabriel eat yesterday?');
   while(numberOfGuessesSoFar < 4) {
     var hotDogGuess = prompt('How many??');
+    console.log('Answer attempt #' + (numberOfGuessesSoFar + 1) + ': ' + hotDogGuess + ' hotdogs');
     if (parseInt(hotDogGuess) === howManyHotDogsDidGabeEatYesterday) {
       alert('Hot Damn!!! You guessed right!!!');
       correctAnswers++;
@@ -113,6 +116,8 @@ function baseballTeamQuestion(){
   var numberOfGuessesAboutBaseballSoFar = 0;
   while(numberOfGuessesAboutBaseballSoFar < 6) {
     var baseballGuess = prompt('Can you name a baseball team that Gabe hates?');
+    console.log('Q: What are Gabriel\'s least favorite baseball teams?');
+    console.log('Attempt #' + (numberOfGuessesAboutBaseballSoFar + 1) + ': ' + baseballGuess);
     if (listOfGabesFiveMostHatedBaseballTeams.includes(baseballGuess.toLowerCase())) {
       alert('Yeah, the ' + baseballGuess + ' are the worst!!');
       correctAnswers++;
@@ -120,7 +125,10 @@ function baseballTeamQuestion(){
     }
     else {
       numberOfGuessesAboutBaseballSoFar++;
-      alert('The ' + baseballGuess.toUpperCase() + ' aren\'t that bad, guess again.');
+      alert('The ' + baseballGuess + ' aren\'t that bad, guess again.');
+      if (numberOfGuessesAboutBaseballSoFar === 6) {
+        alert('Gabe dislikes these teams the most:\n' + listOfGabesFiveMostHatedBaseballTeams.join(', '));
+      }
     }
   }
 }
