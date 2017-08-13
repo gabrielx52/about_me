@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  border-bottom: 0.1em solid black;
+  /*border-bottom: 0.1em solid black;*/
 }
 
 
@@ -69,13 +69,14 @@ nav a:hover{
 
 #rightContent {
   float:left;
-  width:78%;
+  width:88%;
+  /*background-color: grey;*/
   /*padding-left: 1em;*/
   /*background-color: tan;*/
 }
 
 #bioBlock {
-  margin: 1em;
+  /*margin: 1em;*/
 }
 
 #uListSect {
@@ -93,9 +94,9 @@ nav a:hover{
 
 aside {
   position: relative;
-  width: 21%;
+  width: 12%;
   margin: 0;
-  height: 100%;
+  height: 45em;
   float: left;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+19,000000+19,232323+35,232323+35,939393+56,cccccc+67,ededed+78,ffffff+89 */
   background: rgb(0,0,0); /* Old browsers */
@@ -107,7 +108,7 @@ aside {
 
 #topGradient {
   position: absolute;
-  height: 9em;
+  height: 1.5em;
   width: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+19,000000+19,232323+35,232323+35,939393+58,cccccc+72,ededed+81,ffffff+95 */
 background: rgb(0,0,0); /* Old browsers */
@@ -118,18 +119,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 #selfPhoto {
-  margin: 4em 1.2em 17em 1.2em;
+  margin: 1.5em 1.2em 17em 1.2em;
   width: 100%;
+  padding-bottom: 1em;
+  background-color: white;
+  border: 1px grey solid;
   /*height: 8em;*/
-  border-radius: 100%;
+  /*border-radius: 100%;*/
   /*float: left;*/
 }
 
 h2 {
   /*font-family: 'Kanit', sans-serif;*/
-  margin-top: 8em;
-  font-size: 1.1em;
-  font-weight: 700;
+  /*font-family: 'Kanit', sans-serif;*/
+  /*font-weight: 900;*/
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  font-size: 4em;
+  /*font-weight: 700;*/
 }
 
 #contactLinks {
@@ -150,7 +158,8 @@ h2 {
 }
 
 #bioPara {
-  width: 50%;
+  margin-left: 4em;
+  /*width: 60%;*/
 }
 
 .lFloat {
@@ -162,7 +171,7 @@ footer {
   height: 3em;
   width: 9em;
   margin-top: 5em;
-  margin-bottom: 2.1em;
+  /*margin-bottom: 1em;*/
   border-top: solid 1px grey;
 }
 
