@@ -144,11 +144,12 @@ ol li {
 }
 
 footer {
-  float: right;
+  /*float: right;*/
+  margin: auto;
   height: 3em;
-  width: 100%;
+  width: 98%;
   margin-top: 5em;
-  border-top: solid 1px grey;
+  border-top: solid 1px rgb(171, 174, 177);
 }
 
 footer a {
@@ -165,6 +166,6 @@ footer a:hover {
 
 #footText {
   text-align: right;
-  margin-right: 1.2em;
+  margin-right: 1em;
   margin-top: 0.8em;
 }
