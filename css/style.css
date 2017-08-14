@@ -65,15 +65,13 @@ nav a:hover{
 .clearfix {
   clear: both;
 }
-/* Old Tom */
-#col-1-row-1 {
+
+#oldTom {
   float: left;
   margin: 0.2em;
 }
 
-
-/* Biobox*/
-#col-2-row-1 {
+#bioBox {
   background-color: #F8F5E1;
   margin-top: 0.2em;
   margin-right: 0.2em;
@@ -93,7 +91,7 @@ nav a:hover{
   margin-right: 2%;
 }
 
-#col-1-row-2 {
+#locationList {
   text-align: right;
   float: left;
   margin-bottom: 0.2em;
@@ -105,9 +103,7 @@ nav a:hover{
 
 }
 
-
-/* Silky picture */
-#col-2-row-2 {
+#silkyPic {
   margin-bottom: 0.2em;
   margin-right: 0.1em;
   margin-left: 0.4em
@@ -117,7 +113,6 @@ nav a:hover{
 }
 
 .col-2 {
-  /*top: 1;*/
   margin-top: 20px;
   width: 40%;
   float: left;
@@ -157,7 +152,6 @@ ol li {
 }
 
 footer {
-  /*float: right;*/
   margin: auto;
   height: 3em;
   width: 98%;
