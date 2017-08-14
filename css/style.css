@@ -56,7 +56,8 @@ nav a:hover{
 #mainBlock {
   margin: auto;
   border: 1.5px solid lightgrey;
-  width: 45.5%;
+  width: 50em;
+  height: 50em;
   margin-top: 5em;
   position: relative;
 }
@@ -64,56 +65,59 @@ nav a:hover{
 .clearfix {
   clear: both;
 }
-
+/* Old Tom */
 #col-1-row-1 {
-  left: 0;
-  top: 0;
   float: left;
   margin: 0.2em;
-  width: 48%;
 }
 
 
 /* Biobox*/
 #col-2-row-1 {
-  padding-top: 4.8em;
-  padding-right: 0.3em;
-  padding-left: 0.4em;
-  padding-bottom: 5.3em;
   background-color: #F8F5E1;
-  margin-left: 0.7em;
   margin-top: 0.2em;
-  width: 48%;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+  margin-left: 0.1em;
+  width: 24.6em;
+  height: 24.6em;
   float: left;
   bottom: 0;
 }
 
 #bioPara {
   border-bottom: 1px solid black;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 #col-1-row-2 {
   text-align: right;
-  left: 0;
-  top: 0;
   float: left;
-  padding-top: 0.1em;
-  margin: 0.2em;
-  width: 48%;
+  margin-bottom: 0.2em;
+  margin-left: 0.2em;
+  padding-right: 0.1em;
+  margin-right: 0.2em;
+  width: 24.6em;
+  height: 24.6em;
+
 }
 
 
 /* Silky picture */
 #col-2-row-2 {
-  margin-left: 0.7em;
-  margin-bottom: 0.1em;
-  width: 48%;
+  margin-bottom: 0.2em;
+  margin-right: 0.1em;
+  margin-left: 0.4em
+  width: 24.6em;
+  height: 24.2em;
   float: left;
-  bottom: 0;
 }
 
 .col-2 {
-  top: 1;
+  /*top: 1;*/
   margin-top: 20px;
   width: 40%;
   float: left;
@@ -125,6 +129,14 @@ h3 {
 
 #jobs {
   margin-left: 2.5em;
+}
+
+#schools {
+  margin-left: 0.5em;
+}
+
+ul li {
+  margin: 0.3em;
 }
 
 ol {
@@ -145,11 +157,12 @@ ol li {
 }
 
 footer {
-  float: right;
+  /*float: right;*/
+  margin: auto;
   height: 3em;
-  width: 100%;
+  width: 98%;
   margin-top: 5em;
-  border-top: solid 1px grey;
+  border-top: solid 1px rgb(171, 174, 177);
 }
 
 footer a {
@@ -166,6 +179,6 @@ footer a:hover {
 
 #footText {
   text-align: right;
-  margin-right: 1.2em;
+  margin-right: 1em;
   margin-top: 0.8em;
 }
