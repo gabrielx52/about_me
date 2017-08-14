@@ -56,8 +56,8 @@ nav a:hover{
 #mainBlock {
   margin: auto;
   border: 1.5px solid lightgrey;
-  width: 649px;
-  height: 650px;
+  width: 50em;
+  height: 50em;
   margin-top: 5em;
   position: relative;
 }
@@ -129,6 +129,14 @@ h3 {
 
 #jobs {
   margin-left: 2.5em;
+}
+
+#schools {
+  margin-left: 0.5em;
+}
+
+ul li {
+  margin: 0.3em;
 }
 
 ol {
